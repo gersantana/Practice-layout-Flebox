@@ -1,0 +1,32 @@
+:root {
+    /* general colors */
+    --White:#fff;
+    --Platinum:#E8EBE4;
+    --Gray:#BEC1BB;
+    --BlueBell:#A491D2;
+    --PaleLavender:#D4DCFF;
+    --DarkJungle:#1B1F21;
+    --OuterSpace:#444749;
+    --OldSilver:#828485;
+    /* colors buttons */
+    --PrimaryButtons:#A491D2;
+    --HoverButtons:#CDC3E6;
+    --FocusState:#BEC1BB;
+
+
+}
+html {
+	box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+    margin: 0;
+}
+
+body {
+    font-size: 1.6rem;
+}
