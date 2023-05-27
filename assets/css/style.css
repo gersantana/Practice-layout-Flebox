@@ -1,32 +1,145 @@
 :root {
-    /* general colors */
-    --White:#fff;
-    --Platinum:#E8EBE4;
-    --Gray:#BEC1BB;
-    --BlueBell:#A491D2;
-    --PaleLavender:#D4DCFF;
-    --DarkJungle:#1B1F21;
-    --OuterSpace:#444749;
-    --OldSilver:#828485;
-    /* colors buttons */
-    --PrimaryButtons:#A491D2;
-    --HoverButtons:#CDC3E6;
-    --FocusState:#BEC1BB;
-
-
+	/* general colors */
+	--White: #fff;
+	--Platinum: #e8ebe4;
+	--Gray: #bec1bb;
+	--BlueBell: #a491d2;
+	--PaleLavender: #d4dcff;
+	--DarkJungle: #1b1f21;
+	--OuterSpace: #444749;
+	--OldSilver: #828485;
+	/* colors buttons */
+	--PrimaryButtons: #a491d2;
+	--HoverButtons: #cdc3e6;
+	--FocusState: #bec1bb;
 }
 html {
 	box-sizing: border-box;
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 *,
 *::after,
 *::before {
 	box-sizing: inherit;
-    margin: 0;
+	margin: 0;
 }
 
 body {
-    font-size: 1.6rem;
+	font-size: 1.6rem;
+}
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* reusables */
+.text-center {
+	text-align: center;
+}
+.img-user {
+	border: solid 0.2rem var(--Platinum);
+	border-radius: 3rem;
+	width: 4.5rem;
+	height: 4.5rem;
+}
+.img-contacts {
+	border: solid 0.2rem var(--Platinum);
+	border-radius: 5rem;
+	width: 6rem;
+	height: 6rem;
+}
+
+a {
+	text-decoration: none;
+	color: #1b1f21;
+}
+
+.flex-container-main {
+	display: flex;
+	/* max-height: 100vh; */
+	/* max-width: 100vw; */
+	/* max-width: 160rem; */
+	min-height: 100vh;
+	margin: 0 auto;
+}
+
+.container-user-chats {
+    min-width: 20vw;
+    box-shadow: .5rem .5rem .5rem var(--FocusState);
+    z-index: 1;
+}
+
+/* NAV */
+.flex-container-user {
+	display: flex;
+	border: solid 0.1rem var(--FocusState);
+	justify-content: space-around;
+	align-items: center;
+	padding: 1.5rem;
+}
+
+.flex-user {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+.icons-nav {
+	display: flex;
+	gap: 1rem;
+}
+
+.btn-new-chat {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: solid 0.1rem var(--FocusState);
+	height: 15rem;
+}
+
+.btn-new-chat a {
+	background-color: var(--BlueBell);
+	color: var(--White);
+	padding: 2rem 10rem;
+
+}
+/* CHATS  */
+.flex-chats {
+	display: flex;
+	border: solid 0.1rem var(--FocusState);
+	flex-basis: 0;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 1.5rem 2rem;
+    
+}
+
+.flex-chats div {
+	flex: 0.7;
+}
+
+.start-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--Platinum);
+	/* max-width: 50rem; */
+	/* min-width: 65vw; */
+	flex-grow: 1;
+
+}
+
+.start-container .img-start {
+	max-width: 30rem;
+}
+
+.section-chats {
+	/* flex: 0, 0, 5rem; */
+	/* flex-basis: 1; */
+	/* flex: 0 0 50rem; */
+    flex-grow: 2;
+    max-width: 50vw;
 }
