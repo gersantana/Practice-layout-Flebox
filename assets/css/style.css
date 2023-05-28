@@ -41,12 +41,12 @@ h2,
 h3 {
 	font-family: var(--RobotoBold);
 	font-weight: 500;
-    color: var(--OuterSpace);
+	color: var(--OuterSpace);
 	/* font-size:larger; */
 }
 
 p {
-    font-family: var(--OpenSanRegular);
+	font-family: var(--OpenSanRegular);
 }
 
 /* reusables */
@@ -91,7 +91,7 @@ a {
 	justify-content: space-around;
 	align-items: center;
 	padding: 1.5rem;
-    gap:7rem;
+	gap: 7rem;
 }
 
 .flex-user {
@@ -103,7 +103,7 @@ a {
 
 .flex-user p {
 	color: var(--Gray);
-    font-size:small;
+	font-size: small;
 }
 
 .icons-nav {
@@ -132,8 +132,8 @@ a {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    font-family: var(--RobotoBold);
-    font-weight: 500;
+	font-family: var(--RobotoBold);
+	font-weight: 500;
 }
 
 .btn-new-chat a:hover {
@@ -156,8 +156,7 @@ a {
 }
 
 .flex-chats div {
-	flex: .9;
-    /* flex-basis: 20rem; */
+	flex: 0.9;
 }
 
 .start-container {
@@ -173,21 +172,21 @@ a {
 	max-width: 30rem;
 }
 
-.start-container h1 { 
-    font-family: var(--RobotoBold);
-    margin-bottom: 1rem;
-    font-weight: 500;
-    font-size: 6rem;
+.start-container h1 {
+	font-family: var(--RobotoBold);
+	margin-bottom: 1rem;
+	font-weight: 500;
+	font-size: 6rem;
 }
 
-.start-container p { 
-    font-family: var(--OpenSanRegular);
-    font-size: 1.6rem;
-    max-width: 50rem;
-    line-height: 1.6;
+.start-container p {
+	font-family: var(--OpenSanRegular);
+	font-size: 1.6rem;
+	max-width: 50rem;
+	line-height: 1.6;
 }
 
-.start-container span { 
-    font-family: var(--RobotoBold);
-    font-weight: 700;
+.start-container span {
+	font-family: var(--RobotoBold);
+	font-weight: 700;
 }
